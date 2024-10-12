@@ -1,5 +1,5 @@
 <div align = "center">
   
-# $${\color{pink}Ветка \space Смыслова \space Антона}$$
+# :rose: $${\color{pink}Ветка \space Смыслова \space Антона}$$ :rose: 
 
 </div>
