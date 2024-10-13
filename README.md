@@ -4,7 +4,7 @@
 ## $${\color{lightblue}Здесь \space будет \space отображена \space проделанная \space мною \space работа}$$
 ## $${\color{lightyellow}Роль \space в \space проекте: \space Тимлид \space и \space Back'End}$$
 
-### $${\color{aquamarine}Контакты}$$
+## $${\color{aquamarine}Контакты}$$
 <div align="center">
 
 [![VK Badge](https://img.shields.io/badge/VK-%40anthony_winchester-blue?style=for-the-badge&logo=vk)](https://vk.com/anthony_winchester)
