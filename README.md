@@ -1,25 +1,28 @@
 <div align="center">
 
-# $${\color{lightgreen}Ветка \space Агаркова \space Максима}$$  
-## $${\color{lightblue}Моя \space работа \space над \space проектом \space "Дневник \space эмоций"}$$
-
-<img src="https://www.pngmart.com/files/3/Watermelon-PNG-File.png" width="300">
+# $${\color{lightgreen}Ветка \space Агаркова \space Максима}$$
 
 </div>
 
 ---
 
-### :wave: Описание  
-Здесь я в основном занимаюсь дизайном интерфейса, чуть-чуть бэкендом, а также немного фронтендом. Моя задача — сделать приложение удобным для пользователей, с лёгким и понятным интерфейсом ♥
+### $${\color{lightblue}Описание}$$
+$${\color{lightgreen}В \space этой \space ветке \space я \space занимаюсь \space разработкой \space дизайна, \space бэкендом \space и \space немного \space фронтендом.}$$  
+Моя цель — сделать приложение удобным, эффективным и визуально привлекательным.
 
 ---
 
-### :hammer_and_wrench: Основные направления  
-- Разработка пользовательского интерфейса;
-- Поддержка серверной части приложения;
-- Внесение изменений в клиентскую логику.
+### $${\color{lightblue}Основные \space задачи}$$
+- $${\color{lightgreen}Проектирование \space и \space улучшение \space пользовательского \space интерфейса;}$$
+- $${\color{lightgreen}Разработка \space и \space оптимизация \space бэкенда;}$$
+- $${\color{lightgreen}Внесение \space изменений \space в \space клиентскую \space логику.}$$
 
 ---
 
-### :mailbox_with_mail: Контакты  
-Связаться со мной можно через [VK](https://vk.com/mak7u).
+### $${\color{lightblue}Контакты}$$
+<div align="center">
+
+[![VK Badge](https://img.shields.io/badge/VK-%40mak7u-blue?style=for-the-badge&logo=vk)](https://vk.com/mak7u)
+[![Telegram Badge](https://img.shields.io/badge/Telegram-%40mak7u-blue?style=for-the-badge&logo=telegram)](https://t.me/mak7u)
+
+</div>
