@@ -7,8 +7,7 @@
 ---
 
 ### $${\color{lightblue}Описание}$$
-$${\color{lightgreen}В \space этой \space ветке \space я \space занимаюсь \space разработкой \space дизайна, \space бэкендом \space и \space немного \space фронтендом.}$$  
-Моя цель — сделать приложение удобным, эффективным и визуально привлекательным.
+$${\color{lightgreen}Тут \space я \space занимаюсь \space в \space основном \space дизайном, \space помогаю \space чуть-чуть \space с \space бэком \space и \space фронтом.}$$
 
 ---
 
