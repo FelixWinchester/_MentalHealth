@@ -12,7 +12,7 @@ $${\color{lightgreen}Тут \space я \space занимаюсь \space в \space
 ---
 
 ### $${\color{lightblue}Основная \space задача}$$
-- $${\color{lightgreen}Проектирование \space и \space улучшение \space пользовательского \space интерфейса;}$$
+- $${\color{lightgreen}Проектирование \space и \space улучшение \space пользовательского \space интерфейса.}$$
 
 
 ---
