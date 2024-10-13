@@ -1,6 +1,6 @@
 <div align="center">
 
-# $${\color{lightgreen}Ветка \space Агаркова \space Максима}$$
+# $${\color{lightgreen}Агарков \space Мксмк}$$
 
 </div>
 
