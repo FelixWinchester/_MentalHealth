@@ -10,8 +10,8 @@
 ---
 
 ### :space_invader: О нас :
-$${\color{plum}Молодые \space и \space амбициозные \space студенты \space из \space команды \space «Watermellon \space Inc.» \space представляют \space своё \space решение}$$
-$${\color{plum}\space проблемы \space отсутствия \space озабоченности \space своим \space ментальным \space здоровьем}$$
+$${\color{plum}Молодые \space и \space амбициозные \space студенты \space из \space команды \space «Watermellon \space Inc.»}$$
+$${\color{plum}\space представляют \space своё \space решение\space проблемы \space отсутствия \space озабоченности \space своим \space ментальным \space здоровьем}$$
 
 
 ---
