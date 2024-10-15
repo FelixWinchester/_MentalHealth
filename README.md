@@ -17,7 +17,7 @@ $${\color{plum}\space представляют \space своё \space решен
 ---
 
 ### :man_technologist: Команда разработки :
-  - [Смыслов Антон](https://vk.com/anthony_winchester)
+  - [Смыслов Антон](https://github.com/FelixWinchester/_MentalHealth/tree/Smyslov)
   - [Козиков Данила](https://vk.com/id263636221)
   - [Тищенко Максим](https://vk.com/ky3enbka)
   - [Бережнов Артём](https://vk.com/frisx2hell)
