@@ -21,7 +21,7 @@ $${\color{plum}\space представляют \space своё \space решен
   - [Козиков Данила](https://github.com/FelixWinchester/_MentalHealth/tree/Kozikov)
   - [Тищенко Максим](https://github.com/FelixWinchester/_MentalHealth/tree/Tishchenko)
   - [Бережнов Артём](https://github.com/FelixWinchester/_MentalHealth/tree/Berezhnov)
-  - [Макаров Михаил](https://vk.com/triilnb)
+  - [Макаров Михаил](https://github.com/FelixWinchester/_MentalHealth/tree/Makarov)
   - [Агарков Максим](https://github.com/FelixWinchester/_MentalHealth/tree/Agarkov)
   - [Синельников Никита](https://github.com/FelixWinchester/_MentalHealth/tree/Sinelnikov)
 
