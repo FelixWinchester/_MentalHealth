@@ -8,7 +8,7 @@
   
 ## $${\color{MediumSeaGreen}Контакты}$$
 [![VK Badge](https://img.shields.io/badge/VK-%40fowax-blue?style=for-the-badge&logo=vk)](https://vk.com/fowax)
-[![Telegram Badge](https://img.shields.io/badge/Telegram-%40xFoWaXxr-blue?style=for-the-badge&logo=telegram)](https://t.me/xFoWaX)
+[![Telegram Badge](https://img.shields.io/badge/Telegram-%40xFoWaXx-blue?style=for-the-badge&logo=telegram)](https://t.me/xFoWaXx)
 
 </div>
 
