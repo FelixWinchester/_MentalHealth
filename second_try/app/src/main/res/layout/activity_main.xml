@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/greetingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How are you feeling today?"
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"
+        android:marginBottom="16dp"/>
+
+    <GridLayout
+        android:id="@+id/stickerGrid"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:columnCount="3"
+        android:rowCount="4">
+
+        <ImageButton
+            android:id="@+id/stickerHappy"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:contentDescription="Happy"
+            android:src="@drawable/happy_sticker" />
+
+        <ImageButton
+            android:id="@+id/stickerSad"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:contentDescription="Sad"
+            android:src="@drawable/sad_sticker" />
+
+        <ImageButton
+            android:id="@+id/stickerNeutral"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:contentDescription="Neutral"
+            android:src="@drawable/neutral_sticker" />
+
+        <!-- Добавленные стикеры -->
+        <ImageButton
+            android:id="@+id/stickerAngry"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:contentDescription="Angry"
+            android:src="@drawable/angry_sticker" />
+
+        <ImageButton
+            android:id="@+id/stickerExcited"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:contentDescription="Excited"
+            android:src="@drawable/excited_sticker" />
+
+        <ImageButton
+            android:id="@+id/stickerSurprised"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:contentDescription="Surprised"
+            android:src="@drawable/surprised_sticker" />
+
+        <ImageButton
+            android:id="@+id/stickerBored"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:contentDescription="Bored"
+            android:src="@drawable/bored_sticker" />
+
+        <ImageButton
+            android:id="@+id/stickerConfused"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:contentDescription="Confused"
+            android:src="@drawable/confused_sticker" />
+
+        <ImageButton
+            android:id="@+id/stickerTired"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:contentDescription="Tired"
+            android:src="@drawable/tired_sticker" />
+
+    </GridLayout>
+
+<Button
+android:id="@+id/submitMoodButton"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="Continue"
+android:enabled="false"
+android:layout_marginTop="16dp"/>
+
+</LinearLayout>
