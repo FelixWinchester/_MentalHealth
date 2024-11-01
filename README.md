@@ -15,5 +15,7 @@
 </div>
 
 <div align = "center">
+  
 # $${\color{lightgreen}Основная \space задача \space по \space проекту}$$ 
+
 </div>
