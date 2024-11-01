@@ -12,7 +12,8 @@
 [![Telegram Badge](https://img.shields.io/badge/Telegram-%40anthony__winchester-blue?style=for-the-badge&logo=telegram)](https://t.me/anthony_winchester)
 
 </div>
+</div>
 
----
-
+<div align = "center">
+# $${\color{lightgreen}Основная \space задача \space по \space проекту}$$ 
 </div>
