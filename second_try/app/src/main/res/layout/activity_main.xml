@@ -23,7 +23,28 @@
         android:columnCount="3"
         android:rowCount="4">
 
+        <ImageButton
+            android:id="@+id/stickerHappy"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/happy_sticker"
+            android:contentDescription="Happy" />
 
+        <ImageButton
+            android:id="@+id/stickerSad"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:contentDescription="Sad"
+            android:src="@drawable/sad_sticker" />
+
+        <ImageButton
+            android:id="@+id/stickerNeutral"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:contentDescription="Neutral"
+            android:src="@drawable/neutral_sticker" />
 
     </GridLayout>
 
@@ -31,7 +52,7 @@
         android:id="@+id/submitMoodButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="600dp"
+        android:layout_marginTop="500dp"
         android:enabled="false"
         android:text="Continue" />
 
