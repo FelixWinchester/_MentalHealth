@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TRPO Project</string>
+    <string name="schedule">Schedule</string>
+    <string name="diary">Diary</string>
+    <string name="set_goal">Set Goal</string>
+    <string name="tips">Tips</string>
+</resources>

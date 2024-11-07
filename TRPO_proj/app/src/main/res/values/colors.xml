@@ -1,0 +1,7 @@
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="purple_500">#6200EE</color>  <!-- Основной цвет темы -->
+    <color name="purple_700">#3700B3</color>  <!-- Более темный оттенок основного цвета -->
+    <color name="teal_200">#03DAC5</color>    <!-- Дополнительный цвет -->
+</resources>
