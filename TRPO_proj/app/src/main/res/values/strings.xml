@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">TRPO Project</string>
-    <string name="schedule">Schedule</string>
-    <string name="diary">Diary</string>
-    <string name="set_goal">Set Goal</string>
-    <string name="tips">Tips</string>
+    <string name="app_name">Дневник ментального здоровья</string>
+    <string name="schedule">Расписание</string>
+    <string name="diary">Дневник</string>
+    <string name="set_goal">Успехи</string>
+    <string name="tips">Советы</string>
 </resources>

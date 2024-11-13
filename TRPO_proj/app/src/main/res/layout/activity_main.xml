@@ -7,7 +7,7 @@
         android:id="@+id/btnSchedule"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Schedule"
+        android:text="Расписание"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp" />
 
@@ -15,7 +15,7 @@
         android:id="@+id/btnDiary"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Diary"
+        android:text="Дневник"
         android:layout_below="@id/btnSchedule"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp" />
@@ -24,7 +24,7 @@
         android:id="@+id/btnSetGoal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Set Goal"
+        android:text="Успехи"
         android:layout_below="@id/btnDiary"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp" />
@@ -33,7 +33,7 @@
         android:id="@+id/btnTips"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Tips"
+        android:text="Советы"
         android:layout_below="@id/btnSetGoal"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp" />

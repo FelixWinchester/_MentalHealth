@@ -6,6 +6,6 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Tips Page"
+        android:text="Страница советов"
         android:layout_centerInParent="true"/>
 </RelativeLayout>
