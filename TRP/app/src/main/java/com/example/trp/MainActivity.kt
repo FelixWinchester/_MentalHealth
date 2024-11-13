@@ -1,5 +1,6 @@
 package com.example.trp
 
+import android.graphics.Color
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -10,9 +11,13 @@ import com.github.mikephil.charting.components.XAxis
 import com.github.mikephil.charting.data.Entry
 import com.github.mikephil.charting.data.LineData
 import com.github.mikephil.charting.data.LineDataSet
-import android.graphics.Color
+import com.google.firebase.firestore.FirebaseFirestore
+import com.google.firebase.firestore.Query
 
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var lineChart: LineChart
+    private val firestore: FirebaseFirestore by lazy { FirebaseFirestore.getInstance() }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,42 +31,53 @@ class MainActivity : AppCompatActivity() {
         }
 
         // Инициализация LineChart
-        val lineChart = findViewById<LineChart>(R.id.lineChart)
+        lineChart = findViewById(R.id.lineChart)
 
-        // Подготавливаем данные для графика
-        val values = ArrayList<Entry>().apply {
-            add(Entry(1961f, 20f))
-            add(Entry(1970f, 30f))
-            add(Entry(1980f, 40f))
-            add(Entry(1990f, 60f))
-            add(Entry(2000f, 80f))
-            add(Entry(2008f, 600f)) // Пик, как на изображении
-        }
+        // Загружаем данные и отображаем на графике
+        loadChartData()
+    }
 
-        val dataSet = LineDataSet(values, "Пример данных").apply {
-            lineWidth = 2f
-            color = Color.BLUE
-            setDrawCircles(false)
-            setDrawValues(false)
-        }
+    private fun loadChartData() {
+        firestore.collection("chartData")
+            .orderBy("year", Query.Direction.ASCENDING)
+            .get()
+            .addOnSuccessListener { documents ->
+                val entries = mutableListOf<Entry>()
 
-        if (values.isNotEmpty()) {
-            lineChart.data = LineData(dataSet)
-        }
+                for (document in documents) {
+                    val year = document.getLong("year")?.toFloat()
+                    val value = document.getDouble("value")?.toFloat()
 
-        // Настройка оси X
-        lineChart.xAxis.apply {
-            position = XAxis.XAxisPosition.BOTTOM
-            granularity = 10f
-            isGranularityEnabled = true
-        }
+                    if (year != null && value != null) {
+                        entries.add(Entry(year, value))
+                    }
+                }
 
-        // Настройка осей Y
-        lineChart.axisLeft.apply {
-            granularity = 100f
-        }
-        lineChart.axisRight.isEnabled = false
+                if (entries.isNotEmpty()) {
+                    val dataSet = LineDataSet(entries, "Данные из Firestore").apply {
+                        lineWidth = 2f
+                        color = Color.BLUE
+                        setDrawCircles(false)
+                        setDrawValues(false)
+                    }
+                    lineChart.data = LineData(dataSet)
 
-        lineChart.invalidate() // Перерисовываем график
+                    // Настройка оси X
+                    lineChart.xAxis.apply {
+                        position = XAxis.XAxisPosition.BOTTOM
+                        granularity = 10f
+                        isGranularityEnabled = true
+                    }
+
+                    // Настройка осей Y
+                    lineChart.axisLeft.granularity = 100f
+                    lineChart.axisRight.isEnabled = false
+
+                    lineChart.invalidate() // Перерисовываем график
+                }
+            }
+            .addOnFailureListener { exception ->
+                exception.printStackTrace()
+            }
     }
 }

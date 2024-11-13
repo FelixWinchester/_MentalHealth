@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "144884938403",
+    "project_id": "trpo-f9090",
+    "storage_bucket": "trpo-f9090.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:144884938403:android:fa3ca241610b2c7cdef116",
+        "android_client_info": {
+          "package_name": "com.example.trp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0kD-Mo7j2-ZCkC3ilu8YmS84XPd6gg2g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
