@@ -2,7 +2,7 @@
   
 # $${\color{mediumorchid}Ветка \space Смыслова \space Антона}$$
 <!-- ## $${\color{lightblue}Здесь \space будет \space отображена \space проделанная \space мною \space работа}$ -->
-## $${\color{Coral}Роль \space в \space проекте: \space Тимлид \space и \space Fullstack}$$
+## $${\color{Coral}Роль \space в \space проекте: \space Тимлид \space и \space Full'stack}$$
 
 
 <div align="center">
