@@ -24,7 +24,7 @@
 - 11.11.2024 - 18.11.2024: продолжаю переделывать интерфейс под шаблон.
   <div align = "center">
     
-  <img src = "https://res.craft.do/user/full/b6c93108-d581-6846-eab3-18300fa896a6/doc/a509f6c3-277d-9d39-203d-b5d5d69a1663/E83818F9-F341-43D2-AADD-A0165D667872_2/KmjuD9ZclRzmJPWyA885rMRF1t9AFr2oyvXe3ye1Qhgz/Screenshot%202024-11-16%20at%206.17.12PM.png">
+  <img src = "https://res.craft.do/user/full/b6c93108-d581-6846-eab3-18300fa896a6/doc/a509f6c3-277d-9d39-203d-b5d5d69a1663/E83818F9-F341-43D2-AADD-A0165D667872_2/KmjuD9ZclRzmJPWyA885rMRF1t9AFr2oyvXe3ye1Qhgz/Screenshot%202024-11-16%20at%206.17.12PM.png" width = "500" height = "500">
 
   </div>
 
