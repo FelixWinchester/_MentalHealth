@@ -2,7 +2,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F5EFE3">
+    android:background="#F9F6F1">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -10,16 +10,34 @@
         android:orientation="vertical"
         android:padding="16dp">
 
-        <!-- Приветствие -->
-        <TextView
-            android:id="@+id/greetingText"
-            android:layout_width="wrap_content"
+        <!-- Профиль и Приветствие -->
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Добрый день, Пользователь"
-            android:textSize="18sp"
-            android:textColor="#000000"
-            android:layout_marginBottom="16dp"
-            android:fontFamily="sans-serif-medium" />
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="24dp">
+
+            <!-- Картинка профиля -->
+            <ImageView
+                android:id="@+id/profile_image"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/ic_profile"
+                android:background="@drawable/circle_shape"
+                android:scaleType="centerCrop"
+                android:layout_marginEnd="16dp" />
+
+            <!-- Приветствие -->
+            <TextView
+                android:id="@+id/greetingText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Добрый день, Пользователь"
+                android:textSize="20sp"
+                android:textColor="#333333"
+                android:fontFamily="sans-serif-medium" />
+        </LinearLayout>
 
         <!-- Кнопки 2x2 -->
         <GridLayout
@@ -27,8 +45,7 @@
             android:layout_height="wrap_content"
             android:columnCount="2"
             android:rowCount="2"
-            android:layout_marginBottom="16dp"
-            android:alignmentMode="alignMargins"
+            android:layout_marginBottom="24dp"
             android:useDefaultMargins="true">
 
             <Button
@@ -38,8 +55,9 @@
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:text="Расписание"
-                android:background="#E0E0E0"
-                android:textColor="#000000" />
+                android:background="@drawable/button_background"
+                android:textColor="#333333"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btnDiary"
@@ -48,8 +66,9 @@
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:text="Дневник"
-                android:background="#E0E0E0"
-                android:textColor="#000000" />
+                android:background="@drawable/button_background"
+                android:textColor="#333333"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btnSetGoal"
@@ -58,8 +77,9 @@
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:text="Достижения"
-                android:background="#E0E0E0"
-                android:textColor="#000000" />
+                android:background="@drawable/button_background"
+                android:textColor="#333333"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btnTips"
@@ -68,64 +88,66 @@
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:text="Советы"
-                android:background="#E0E0E0"
-                android:textColor="#000000" />
+                android:background="@drawable/button_background"
+                android:textColor="#333333"
+                android:textStyle="bold" />
         </GridLayout>
 
-        <!-- Остальной интерфейс -->
+        <!-- Записи по дням -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Записи по дням"
-            android:textSize="16sp"
-            android:layout_marginBottom="8dp"
-            android:textColor="#000000" />
+            android:textSize="18sp"
+            android:layout_marginBottom="16dp"
+            android:textColor="#333333" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginBottom="16dp">
+            android:layout_marginBottom="24dp"
+            android:weightSum="4">
 
             <TextView
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="64dp"
                 android:layout_weight="1"
+                android:gravity="center"
                 android:text="ОКТ\n24"
-                android:gravity="center"
-                android:background="#E0E0E0"
-                android:padding="8dp"
-                android:textColor="#000000" />
+                android:textColor="#333333"
+                android:background="@drawable/day_background"
+                android:padding="8dp" />
 
             <TextView
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="64dp"
                 android:layout_weight="1"
+                android:gravity="center"
                 android:text="ОКТ\n25"
-                android:gravity="center"
-                android:background="#E0E0E0"
-                android:padding="8dp"
-                android:textColor="#000000" />
+                android:textColor="#333333"
+                android:background="@drawable/day_background"
+                android:padding="8dp" />
 
             <TextView
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="64dp"
                 android:layout_weight="1"
+                android:gravity="center"
                 android:text="ОКТ\n26"
-                android:gravity="center"
-                android:background="#E0E0E0"
-                android:padding="8dp"
-                android:textColor="#000000" />
+                android:textColor="#333333"
+                android:background="@drawable/day_background"
+                android:padding="8dp" />
 
             <TextView
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="64dp"
                 android:layout_weight="1"
-                android:text="ОКТ\n27"
                 android:gravity="center"
-                android:background="#E0E0E0"
-                android:padding="8dp"
-                android:textColor="#000000" />
+                android:text="ОКТ\n27"
+                android:textColor="#333333"
+                android:background="@drawable/day_background"
+                android:padding="8dp" />
         </LinearLayout>
 
         <!-- Статьи -->
@@ -133,38 +155,39 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Статьи"
-            android:textColor="#000000"
-            android:layout_marginBottom="8dp"
-            android:textSize="16sp" />
+            android:layout_marginBottom="16dp"
+            android:textSize="18sp"
+            android:textColor="#333333" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:weightSum="3">
 
             <View
                 android:id="@+id/article1"
                 android:layout_width="0dp"
                 android:layout_height="100dp"
                 android:layout_weight="1"
-                android:background="#E0E0E0"
-                android:layout_margin="4dp" />
+                android:background="@drawable/article_background"
+                android:layout_margin="8dp" />
 
             <View
                 android:id="@+id/article2"
                 android:layout_width="0dp"
                 android:layout_height="100dp"
                 android:layout_weight="1"
-                android:background="#E0E0E0"
-                android:layout_margin="4dp" />
+                android:background="@drawable/article_background"
+                android:layout_margin="8dp" />
 
             <View
                 android:id="@+id/article3"
                 android:layout_width="0dp"
                 android:layout_height="100dp"
                 android:layout_weight="1"
-                android:background="#E0E0E0"
-                android:layout_margin="4dp" />
+                android:background="@drawable/article_background"
+                android:layout_margin="8dp" />
         </LinearLayout>
     </LinearLayout>
 </ScrollView>
