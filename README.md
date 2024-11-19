@@ -34,5 +34,9 @@
 
   </div>
 
+- 18.11.2024 - 25.11.2024: Переделал кнопки и подтянул оптимизацию
+  <div align = "center">
+
+  <img src = "https://docs.craft.do/editor/d/b6c93108-d581-6846-eab3-18300fa896a6/a509f6c3-277d-9d39-203d-b5d5d69a1663?s=QJjeoGpg4axFBBGUgFPzFV866ezDwM45cj75vuuHqgqh" width ="250" height = "500">
   
 </div>
