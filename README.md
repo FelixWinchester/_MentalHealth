@@ -10,7 +10,7 @@
 ---
 
 
-### О нас:  
+### :space_invader: О нас:  
 $${\color{plum}Молодые \space и \space амбициозные \space студенты \space из \space команды \space «Watermelon \space Inc.»}$$  
 $${\color{plum}представляют \space своё \space решение \space для \space удобного \space отслеживания \space психологического \space состояния \space в \space современном \space мире.}$$  
 
