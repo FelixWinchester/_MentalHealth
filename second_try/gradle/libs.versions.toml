@@ -1,6 +1,9 @@
 [versions]
 agp = "8.6.1"
+firebaseAnalytics = "22.1.2"
 firebaseBom = "33.5.1"
+firebaseDatabaseVersion = "20.0.9'"
+googleFirebaseAuth = "21.0.8"
 googleServices = "4.4.2"
 kotlin = "1.9.0"
 coreKtx = "1.15.0"
@@ -20,7 +23,11 @@ constraintlayout = "2.2.0"
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 firebase-analytics = { module = "com.google.firebase:firebase-analytics" }
+firebase-auth-v2108 = { module = "com.google.firebase:firebase-auth", version.ref = "googleFirebaseAuth" }
 firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom" }
+firebase-database-v2009 = { module = "com.google.firebase:firebase-database", version.ref = "firebaseDatabaseVersion" }
+google-firebase-analytics = { module = "com.google.firebase:firebase-analytics", version.ref = "firebaseAnalytics" }
+google-firebase-auth = { module = "com.google.firebase:firebase-auth" }
 google-services = { module = "com.google.gms:google-services", version.ref = "googleServices" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }

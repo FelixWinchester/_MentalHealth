@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.example.second_try"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.second_try"
@@ -63,8 +63,6 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
-    implementation(libs.firebase.auth)
-    implementation(libs.firebase.database)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     implementation(libs.androidx.activity)
@@ -76,7 +74,8 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
-
-    implementation(libs.firebase.bom)
-    implementation(libs.firebase.analytics)
+    implementation(libs.google.firebase.auth)
+    implementation(platform(libs.firebase.bom))
+    implementation(libs.google.firebase.analytics)
+    implementation(libs.firebase.database)
 }
