@@ -52,6 +52,7 @@ class RegisterActivity : AppCompatActivity() {
                         }
                     }
             }
+            startActivity(Intent(this@RegisterActivity, LoginActivity::class.java))
         }
 
         // Настройка edge-to-edge экрана и отступов

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Заголовок -->
+    <TextView
+        android:id="@+id/moodTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Как вы себя чувствуете?"
+        android:textSize="24sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Сетка плиток -->
+    <GridLayout
+        android:id="@+id/moodGrid"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_rowWeight="1"
+        android:layout_marginTop="4dp"
+        android:columnCount="2"
+        android:orientation="horizontal"
+        android:rowCount="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/moodTitle">
+
+        <!-- Плитка 1 -->
+        <LinearLayout
+            android:id="@+id/btnHappy"
+            android:layout_width="89dp"
+            android:layout_height="232dp"
+            android:layout_columnWeight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:onClick="onTileClick"
+            android:orientation="vertical"
+            android:padding="16dp"> <!-- Обработчик клика -->
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="Счастлив"
+                android:src="@drawable/ic_happy" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Счастлив"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Плитка 2 -->
+        <LinearLayout
+            android:id="@+id/btnSad"
+            android:layout_width="106dp"
+            android:layout_height="273dp"
+            android:layout_columnWeight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:onClick="onTileClick"
+            android:orientation="vertical"
+            android:padding="16dp"> <!-- Обработчик клика -->
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:contentDescription="Счастлив"
+                android:src="@drawable/ic_happy_emoji" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Счастлив"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Плитка 3 -->
+        <LinearLayout
+            android:id="@+id/btnAngry"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:onClick="onTileClick"
+            android:orientation="vertical"
+            android:padding="16dp"> <!-- Обработчик клика -->
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:contentDescription="Счастлив"
+                android:src="@drawable/ic_happy_emoji" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Счастлив"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Плитка 4 -->
+        <LinearLayout
+            android:id="@+id/btnRelaxed"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:onClick="onTileClick"
+            android:orientation="vertical"
+            android:padding="16dp"> <!-- Обработчик клика -->
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="Счастлив"
+                android:src="@drawable/ic_happy_emoji" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Счастлив"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Плитка 5 -->
+        <LinearLayout
+            android:id="@+id/btnTired"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:onClick="onTileClick"
+            android:orientation="vertical"
+            android:padding="16dp"> <!-- Обработчик клика -->
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="Счастлив"
+                android:src="@drawable/ic_happy_emoji" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Счастлив"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Плитка 6 -->
+        <LinearLayout
+            android:id="@+id/btnExcited"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:onClick="onTileClick"
+            android:orientation="vertical"
+            android:padding="16dp"> <!-- Обработчик клика -->
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="Счастлив"
+                android:src="@drawable/ic_happy_emoji" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Счастлив"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

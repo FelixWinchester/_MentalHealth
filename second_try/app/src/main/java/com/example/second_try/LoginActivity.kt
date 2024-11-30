@@ -10,6 +10,10 @@ import androidx.core.view.WindowInsetsCompat
 import com.example.second_try.databinding.ActivityLoginBinding
 import com.google.firebase.auth.AuthResult
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.FirebaseDatabase
+import java.text.SimpleDateFormat
+import java.util.Date
+import java.util.Locale
 
 class LoginActivity : AppCompatActivity() {
 
@@ -34,7 +38,7 @@ class LoginActivity : AppCompatActivity() {
                 FirebaseAuth.getInstance().signInWithEmailAndPassword(email, password)
                     .addOnCompleteListener(this) { task ->
                         if (task.isSuccessful) {
-                            startActivity(Intent(this@LoginActivity, MainActivity::class.java))
+                            checkMoodStatusAndNavigate()
                         } else {
                             Toast.makeText(applicationContext, "Ошибка авторизации", Toast.LENGTH_SHORT).show()
                         }
@@ -46,12 +50,33 @@ class LoginActivity : AppCompatActivity() {
             startActivity(Intent(this, RegisterActivity::class.java))
         }
 
+    }
+    private fun checkMoodStatusAndNavigate() {
+        val currentUser = auth.currentUser
+        if (currentUser == null) {
+            Toast.makeText(applicationContext, "Пользователь не найден", Toast.LENGTH_SHORT).show()
+            return
+        }
 
-        enableEdgeToEdge()
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+        val userId = currentUser.uid
+        val databaseRef = FirebaseDatabase.getInstance("https://mental-health-72105-default-rtdb.europe-west1.firebasedatabase.app")
+            .getReference("Users")
+            .child(userId)
+
+        val currentDate = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault()).format(Date())
+
+        databaseRef.child("moodEvaluated").get().addOnSuccessListener { dataSnapshot ->
+            val lastMoodDate = dataSnapshot.getValue(String::class.java)
+            if (lastMoodDate == currentDate) {
+                // Если пользователь уже оценивал своё состояние сегодня, переходим на MainActivity
+                startActivity(Intent(this@LoginActivity, MainActivity::class.java))
+            } else {
+                // Если пользователь ещё не оценивал состояние сегодня, переходим на MoodActivity
+                startActivity(Intent(this@LoginActivity, MoodActivity::class.java))
+            }
+            finish()
+        }.addOnFailureListener {
+            Toast.makeText(applicationContext, "Ошибка загрузки данных", Toast.LENGTH_SHORT).show()
         }
     }
 }
