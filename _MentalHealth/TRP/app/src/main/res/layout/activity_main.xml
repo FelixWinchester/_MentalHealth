@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -7,23 +8,87 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <!-- LineChart в верхней части экрана с фиксированной высотой -->
-    <com.github.mikephil.charting.charts.LineChart
-        android:id="@+id/lineChart"
-        android:layout_width="0dp"
-        android:layout_height="300dp"
+    <!-- TextView перед графиком -->
+    <TextView
+        android:id="@+id/diaryOverviewText"
+        android:layout_width="153dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif"
+        android:lineHeight="14.52sp"
+        android:text="@string/diary_overview"
+        android:textColor="#000000"
+        android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.162"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- TextView в нижней части для теста -->
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Mental Details"
-        app:layout_constraintTop_toBottomOf="@+id/lineChart"
+    <!-- LineChart с заданными параметрами -->
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/lineChart"
+        android:layout_width="328dp"
+        android:layout_height="196dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/diaryOverviewText" />
+
+    <!-- TextView после графика -->
+    <TextView
+        android:id="@+id/mentalDetailsText"
+        android:layout_width="82dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif"
+        android:lineHeight="14.52sp"
+        android:text="@string/mental_details"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.127"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lineChart" />
+
+    <!-- Кнопка вместо Spinner -->
+    <Button
+        android:id="@+id/showDialogButton"
+        android:layout_width="328dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#B0B0B0"
+        android:text="@string/show_detail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mentalDetailsText" />
+
+    <!-- Контейнер для всплывающего окна -->
+    <FrameLayout
+        android:id="@+id/popupContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:visibility="gone"> <!-- Скрыто по умолчанию -->
+
+        <ScrollView
+            android:layout_width="186dp"
+            android:layout_height="189dp"
+            android:layout_gravity="center"
+            android:background="#FFFFFF"
+            android:elevation="8dp"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/dialogTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="4dp"
+                android:text="@string/dialog_content"
+                android:textColor="#000"
+                android:textSize="16sp" />
+        </ScrollView>
+    </FrameLayout> <!-- Правильное закрытие FrameLayout -->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

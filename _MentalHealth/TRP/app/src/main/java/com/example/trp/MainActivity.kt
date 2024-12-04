@@ -2,6 +2,10 @@ package com.example.trp
 
 import android.graphics.Color
 import android.os.Bundle
+import android.view.View
+import android.widget.Button
+import android.widget.FrameLayout
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -19,6 +23,8 @@ class MainActivity : AppCompatActivity() {
     private lateinit var lineChart: LineChart
     private val firestore: FirebaseFirestore by lazy { FirebaseFirestore.getInstance() }
 
+    private lateinit var popupContainer: FrameLayout // Контейнер для всплывающего окна
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -33,8 +39,26 @@ class MainActivity : AppCompatActivity() {
         // Инициализация LineChart
         lineChart = findViewById(R.id.lineChart)
 
-        // Загружаем данные и отображаем на графике
+        // Загрузка данных для графика
         loadChartData()
+
+        // Инициализация всплывающего окна
+        popupContainer = findViewById(R.id.popupContainer)
+        val dialogTextView: TextView = findViewById(R.id.dialogTextView)
+
+        // Задаём текст для окна (можно настроить через Firebase или ресурсы)
+        dialogTextView.text = getString(R.string.dialog_content)
+
+        // Настройка кнопки для показа окна
+        val showDialogButton: Button = findViewById(R.id.showDialogButton)
+        showDialogButton.setOnClickListener {
+            popupContainer.visibility = View.VISIBLE // Показываем окно
+        }
+
+        // Закрытие окна при нажатии на фон
+        popupContainer.setOnClickListener {
+            popupContainer.visibility = View.GONE // Скрываем окно
+        }
     }
 
     private fun loadChartData() {

@@ -7,7 +7,7 @@ plugins {
 
 android {
     namespace = "com.example.trp"
-    compileSdk = 35
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.trp"
@@ -17,7 +17,6 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-    }
     }
 
     buildTypes {
