@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -24,33 +23,29 @@
         android:id="@+id/moodGrid"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_rowWeight="1"
-        android:layout_marginTop="4dp"
+        android:layout_margin="8dp"
         android:columnCount="2"
-        android:orientation="horizontal"
         android:rowCount="3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/moodTitle">
+        android:useDefaultMargins="true"
+        app:layout_constraintTop_toBottomOf="@id/moodTitle"
+        app:layout_constraintBottom_toBottomOf="parent">
 
         <!-- Плитка 1 -->
         <LinearLayout
             android:id="@+id/btnHappy"
-            android:layout_width="89dp"
-            android:layout_height="232dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            android:clickable="true"
-            android:focusable="true"
             android:gravity="center"
-            android:onClick="onTileClick"
             android:orientation="vertical"
-            android:padding="16dp"> <!-- Обработчик клика -->
+            android:padding="8dp"
+            android:clickable="true"
+            android:focusable="true">
 
             <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
                 android:contentDescription="Счастлив"
                 android:src="@drawable/ic_happy" />
 
@@ -66,27 +61,27 @@
         <!-- Плитка 2 -->
         <LinearLayout
             android:id="@+id/btnSad"
-            android:layout_width="106dp"
-            android:layout_height="273dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            android:clickable="true"
-            android:focusable="true"
             android:gravity="center"
-            android:onClick="onTileClick"
             android:orientation="vertical"
-            android:padding="16dp"> <!-- Обработчик клика -->
+            android:padding="8dp"
+            android:clickable="true"
+            android:focusable="true">
 
             <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="180dp"
-                android:contentDescription="Счастлив"
-                android:src="@drawable/ic_happy_emoji" />
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:contentDescription="Грустный"
+                android:src="@drawable/ic_happy" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Счастлив"
+                android:text="Грустный"
                 android:textColor="@android:color/black"
                 android:textSize="16sp" />
         </LinearLayout>
@@ -95,26 +90,26 @@
         <LinearLayout
             android:id="@+id/btnAngry"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            android:clickable="true"
-            android:focusable="true"
             android:gravity="center"
-            android:onClick="onTileClick"
             android:orientation="vertical"
-            android:padding="16dp"> <!-- Обработчик клика -->
+            android:padding="8dp"
+            android:clickable="true"
+            android:focusable="true">
 
             <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="180dp"
-                android:contentDescription="Счастлив"
-                android:src="@drawable/ic_happy_emoji" />
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:contentDescription="Злой"
+                android:src="@drawable/ic_happy" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Счастлив"
+                android:text="Злой"
                 android:textColor="@android:color/black"
                 android:textSize="16sp" />
         </LinearLayout>
@@ -123,26 +118,26 @@
         <LinearLayout
             android:id="@+id/btnRelaxed"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            android:clickable="true"
-            android:focusable="true"
             android:gravity="center"
-            android:onClick="onTileClick"
             android:orientation="vertical"
-            android:padding="16dp"> <!-- Обработчик клика -->
+            android:padding="8dp"
+            android:clickable="true"
+            android:focusable="true">
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:contentDescription="Счастлив"
-                android:src="@drawable/ic_happy_emoji" />
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:contentDescription="Расслаблен"
+                android:src="@drawable/ic_happy" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Счастлив"
+                android:text="Расслаблен"
                 android:textColor="@android:color/black"
                 android:textSize="16sp" />
         </LinearLayout>
@@ -151,26 +146,26 @@
         <LinearLayout
             android:id="@+id/btnTired"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            android:clickable="true"
-            android:focusable="true"
             android:gravity="center"
-            android:onClick="onTileClick"
             android:orientation="vertical"
-            android:padding="16dp"> <!-- Обработчик клика -->
+            android:padding="8dp"
+            android:clickable="true"
+            android:focusable="true">
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:contentDescription="Счастлив"
-                android:src="@drawable/ic_happy_emoji" />
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:contentDescription="Уставший"
+                android:src="@drawable/ic_happy" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Счастлив"
+                android:text="Уставший"
                 android:textColor="@android:color/black"
                 android:textSize="16sp" />
         </LinearLayout>
@@ -179,29 +174,28 @@
         <LinearLayout
             android:id="@+id/btnExcited"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            android:clickable="true"
-            android:focusable="true"
             android:gravity="center"
-            android:onClick="onTileClick"
             android:orientation="vertical"
-            android:padding="16dp"> <!-- Обработчик клика -->
+            android:padding="8dp"
+            android:clickable="true"
+            android:focusable="true">
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:contentDescription="Счастлив"
-                android:src="@drawable/ic_happy_emoji" />
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:contentDescription="Взволнован"
+                android:src="@drawable/ic_happy" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Счастлив"
+                android:text="Взволнован"
                 android:textColor="@android:color/black"
                 android:textSize="16sp" />
         </LinearLayout>
-
     </GridLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
