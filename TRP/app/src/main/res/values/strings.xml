@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">TRP</string>
+    <string name="diary_overview">Diary Overview</string>
+    <string name="mental_details">Mental Details</string>
+    <string name="show_text">Show Text</string>
+    <string name="sample_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Proin nec feugiat nisl. Integer vel mauris libero. Curabitur quis dui vel libero eleifend facilisis a ut tortor. Suspendisse potenti.</string>
+    <string name="show_detail">Show Detail</string>
+    <string name="dialog_content">My TExt My TExt My TExt My TExt My TExt My TExtMy TExtMy TExtMy TExtMy TExtMy TExtMy TExtMy TExtMy TExtMy TExtMy TExtMy TExtMy TExtMy TExtMy TExtMy TExtMy TExtMy TExtMy TExtMy TExtMy TExtMy TExtMy TExtMy TExtMy TExtMy TExtMy TExtMy TExtMy TExtMy TExtMy TExtMy TExtMy TExtMy TExtMy TExtMy TExtMy TExtMy TExtMy TExtMy TExtMy TExtMy TExtMy TExtMy TExtMy TExtMy TExtMy TExtMy TExtMy TExtMy TExtMy TExtMy TExtMy TExtMy TExtMy TExtMy TExt</string>
+    <string name="title_activity_graphic">GraphicActivity</string>
+    <string name="title_activity_graph">GraphActivity</string>
 </resources>
