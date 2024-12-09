@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -19,59 +18,250 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginBottom="16dp" />
 
-    <!-- Сетка кнопок -->
+    <!-- Сетка плиток -->
     <GridLayout
         android:id="@+id/moodGrid"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
         android:columnCount="2"
         android:rowCount="3"
+        android:useDefaultMargins="true"
         app:layout_constraintTop_toBottomOf="@id/moodTitle"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp">
+        app:layout_constraintBottom_toBottomOf="parent">
 
-        <!-- Кнопки -->
-        <Button
-            android:id="@+id/btnHappy"
+        <!-- Плитка 1 -->
+        <LinearLayout
+            android:id="@+id/LayoutHappy"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            android:text="Счастлив" />
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:clickable="true"
+            android:focusable="true">
+            <Button
+                android:id="@+id/btnHappy"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:clickable="true"
+                android:focusable="true"
+                />
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:contentDescription="Счастлив"
+                android:src="@drawable/ic_happy" />
 
-        <Button
-            android:id="@+id/btnSad"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:text="Грустный" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Счастлив"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
 
-        <Button
-            android:id="@+id/btnAngry"
+        <!-- Плитка 2 -->
+        <LinearLayout
+            android:id="@+id/LayoutSad"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            android:text="Злой" />
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:clickable="true"
+            android:focusable="true">
+            <Button
+                android:id="@+id/btnSad"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:clickable="true"
+                android:focusable="true"
+                />
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:contentDescription="Грустный"
+                android:src="@drawable/ic_happy" />
 
-        <Button
-            android:id="@+id/btnRelaxed"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:text="Спокойный" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Грустный"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
 
-        <Button
-            android:id="@+id/btnTired"
+        <!-- Плитка 3 -->
+        <LinearLayout
+            android:id="@+id/LayoutAngry"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            android:text="Усталый" />
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:clickable="true"
+            android:focusable="true">
+            <Button
+                android:id="@+id/btnAngry"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:clickable="true"
+                android:focusable="true"
+                />
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:contentDescription="Злой"
+                android:src="@drawable/ic_happy" />
 
-        <Button
-            android:id="@+id/btnExcited"
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Злой"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Плитка 4 -->
+        <LinearLayout
+            android:id="@+id/LayoutRelaxed"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            android:text="Возбужденный" />
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:clickable="true"
+            android:focusable="true">
+            <Button
+                android:id="@+id/btnRelaxed"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:clickable="true"
+                android:focusable="true"
+                />
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:contentDescription="Расслаблен"
+                android:src="@drawable/ic_happy" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Расслаблен"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Плитка 5 -->
+        <LinearLayout
+            android:id="@+id/LayoutTired"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:clickable="true"
+            android:focusable="true">
+            <Button
+                android:id="@+id/btnTired"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:clickable="true"
+                android:focusable="true"
+                />
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:contentDescription="Уставший"
+                android:src="@drawable/ic_happy" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Уставший"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Плитка 6 -->
+        <LinearLayout
+            android:id="@+id/LayoutExcited"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:clickable="true"
+            android:focusable="true">
+            <Button
+                android:id="@+id/btnExcited"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:clickable="true"
+                android:focusable="true"
+                />
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:contentDescription="Взволнован"
+                android:src="@drawable/ic_happy" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Взволнован"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
     </GridLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
