@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
             }
 
             findViewById<Button>(R.id.btnSetGoal).setOnClickListener {
-
+                startActivity(Intent(this, AchievementsActivity::class.java))
             }
 
             findViewById<Button>(R.id.btnTips).setOnClickListener {
