@@ -30,7 +30,10 @@ class MoodActivity : AppCompatActivity() {
         val databaseRef = FirebaseDatabase.getInstance("https://mental-health-72105-default-rtdb.europe-west1.firebasedatabase.app")
             .getReference("Users")
             .child(userId)
-
+        findViewById<Button>(R.id.btnExit).setOnClickListener {
+            startActivity(Intent(this, MainActivity::class.java))
+            finish()
+        }
         // Обработчики кнопок
         findViewById<Button>(R.id.btnHappy).setOnClickListener { saveMoodAndNavigate("Счастлив", databaseRef) }
         findViewById<Button>(R.id.btnSad).setOnClickListener { saveMoodAndNavigate("Грустный", databaseRef) }

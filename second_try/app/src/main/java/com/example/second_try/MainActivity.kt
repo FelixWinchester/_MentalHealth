@@ -2,20 +2,11 @@ package com.example.second_try
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.*
-import androidx.compose.material3.Button
-import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import androidx.compose.ui.unit.dp
-import com.example.second_try.ui.theme.Second_tryTheme
+import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 
-class MainActivity : ComponentActivity() {
+class MainActivity : AppCompatActivity() {
 
     private lateinit var auth: FirebaseAuth
 
@@ -29,51 +20,32 @@ class MainActivity : ComponentActivity() {
             startActivity(Intent(this, LoginActivity::class.java))
             finish() // Закрываем MainActivity, если пользователь не авторизован
         } else {
-            setContent {
-                Second_tryTheme {
-                    Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                        MainScreen(
-                            modifier = Modifier.padding(innerPadding),
-                            onLogout = {
-                                auth.signOut()
-                                startActivity(Intent(this, LoginActivity::class.java))
-                                finish() // Закрываем MainActivity после выхода
-                            }
-                        )
-                    }
-                }
+            // Подключение XML разметки
+            setContentView(R.layout.activity_main)
+
+            // Обработчики кнопок
+            findViewById<Button>(R.id.btnSchedule).setOnClickListener {
+
+            }
+
+            findViewById<Button>(R.id.btnDiary).setOnClickListener {
+
+            }
+
+            findViewById<Button>(R.id.btnSetGoal).setOnClickListener {
+
+            }
+
+            findViewById<Button>(R.id.btnTips).setOnClickListener {
+
+            }
+
+            findViewById<Button>(R.id.btnLogout).setOnClickListener {
+                auth.signOut()
+                startActivity(Intent(this, LoginActivity::class.java))
+                finish()
+
             }
         }
-    }
-}
-
-@Composable
-fun MainScreen(modifier: Modifier = Modifier, onLogout: () -> Unit) {
-    Column(
-        modifier = modifier
-            .fillMaxSize()
-            .padding(16.dp),
-        verticalArrangement = Arrangement.Center
-    ) {
-        Greeting(name = "User")
-
-        Spacer(modifier = Modifier.height(16.dp))
-
-        Button(onClick = onLogout) {
-            Text("Выйти")
-        }
-    }
-}
-
-@Composable
-fun Greeting(name: String) {
-    Text(text = "Hello $name!")
-}
-
-@Preview(showBackground = true)
-@Composable
-fun MainScreenPreview() {
-    Second_tryTheme {
-        MainScreen(onLogout = {})
     }
 }
