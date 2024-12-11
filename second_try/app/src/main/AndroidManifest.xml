@@ -15,16 +15,20 @@
         android:theme="@style/Theme.Second_try"
         tools:targetApi="31">
         <activity
-            android:name=".MoodActivity"
+            android:name=".AchievementsActivity"
             android:exported="false" />
+        <activity
+            android:name=".MoodActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Second_try" />
         <activity
             android:name=".RegisterActivity"
             android:exported="false"
-            android:theme="@style/Theme.AppCompat" />
+            android:theme="@style/Theme.Second_try" />
         <activity
             android:name=".LoginActivity"
             android:exported="false"
-            android:theme="@style/Theme.AppCompat" />
+            android:theme="@style/Theme.Second_try" />
         <activity
             android:name=".MainActivity"
             android:exported="true"

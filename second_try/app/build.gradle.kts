@@ -78,4 +78,6 @@ dependencies {
     implementation(platform(libs.firebase.bom))
     implementation(libs.google.firebase.analytics)
     implementation(libs.firebase.database)
+    implementation(kotlin("script-runtime"))
+    implementation("com.github.PhilJay:MPAndroidChart:v3.1.0")
 }

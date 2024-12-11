@@ -2,78 +2,93 @@ package com.example.second_try
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.*
-import androidx.compose.material3.Button
-import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import androidx.compose.ui.unit.dp
-import com.example.second_try.ui.theme.Second_tryTheme
+import android.widget.Button
+import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.*
 
-class MainActivity : ComponentActivity() {
+class MainActivity : AppCompatActivity() {
 
     private lateinit var auth: FirebaseAuth
+    private lateinit var database: FirebaseDatabase
+    private lateinit var userRef: DatabaseReference
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         auth = FirebaseAuth.getInstance()
+        database = FirebaseDatabase.getInstance("https://mental-health-72105-default-rtdb.europe-west1.firebasedatabase.app/")
 
         // Проверка авторизации пользователя
         if (auth.currentUser == null) {
             startActivity(Intent(this, LoginActivity::class.java))
-            finish() // Закрываем MainActivity, если пользователь не авторизован
+            finish()
         } else {
-            setContent {
-                Second_tryTheme {
-                    Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                        MainScreen(
-                            modifier = Modifier.padding(innerPadding),
-                            onLogout = {
-                                auth.signOut()
-                                startActivity(Intent(this, LoginActivity::class.java))
-                                finish() // Закрываем MainActivity после выхода
-                            }
-                        )
-                    }
-                }
+            setContentView(R.layout.activity_main)
+
+            // Ссылка на данные текущего пользователя
+            val currentUser = auth.currentUser
+            val userId = currentUser?.uid
+            if (userId != null) {
+                userRef = database.getReference("users").child(userId)
+                loadUserName()
+            }
+
+            // Обработчики кнопок
+            findViewById<Button>(R.id.btnSchedule).setOnClickListener {
+                // Ваш код для кнопки "Расписание"
+            }
+
+            findViewById<Button>(R.id.btnDiary).setOnClickListener {
+                // Ваш код для кнопки "Дневник"
+            }
+
+            findViewById<Button>(R.id.btnSetGoal).setOnClickListener {
+                startActivity(Intent(this, AchievementsActivity::class.java))
+            }
+
+            findViewById<Button>(R.id.btnTips).setOnClickListener {
+                // Ваш код для кнопки "Советы"
+            }
+
+            findViewById<Button>(R.id.btnLogout).setOnClickListener {
+                auth.signOut()
+                startActivity(Intent(this, LoginActivity::class.java))
+                finish()
             }
         }
     }
-}
 
-@Composable
-fun MainScreen(modifier: Modifier = Modifier, onLogout: () -> Unit) {
-    Column(
-        modifier = modifier
-            .fillMaxSize()
-            .padding(16.dp),
-        verticalArrangement = Arrangement.Center
-    ) {
-        Greeting(name = "User")
+    private fun loadUserName() {
+        val greetingText: TextView = findViewById(R.id.greetingText)
 
-        Spacer(modifier = Modifier.height(16.dp))
-
-        Button(onClick = onLogout) {
-            Text("Выйти")
+        val currentUser = FirebaseAuth.getInstance().currentUser
+        if (currentUser == null) {
+            greetingText.text = "Добрый день, Пользователь"
+            return
         }
-    }
-}
 
-@Composable
-fun Greeting(name: String) {
-    Text(text = "Hello $name!")
-}
+        // Инициализация FirebaseDatabase с правильным URL
+        val database = FirebaseDatabase.getInstance("https://mental-health-72105-default-rtdb.europe-west1.firebasedatabase.app")
+        val userRef = database.getReference("Users").child(currentUser.uid)
 
-@Preview(showBackground = true)
-@Composable
-fun MainScreenPreview() {
-    Second_tryTheme {
-        MainScreen(onLogout = {})
+        // Считывание имени пользователя
+        userRef.child("username").addListenerForSingleValueEvent(object : ValueEventListener {
+            override fun onDataChange(snapshot: DataSnapshot) {
+                val userName = snapshot.getValue(String::class.java)
+                if (!userName.isNullOrEmpty()) {
+                    greetingText.text = "Добрый день, $userName"
+                } else {
+                    greetingText.text = "Добрый день, Пользователь"
+                }
+            }
+
+            override fun onCancelled(error: DatabaseError) {
+                greetingText.text = "Добрый день, Пользователь"
+                error.toException().printStackTrace()
+            }
+        })
     }
+
 }

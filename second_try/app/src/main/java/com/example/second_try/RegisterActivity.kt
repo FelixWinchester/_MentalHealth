@@ -26,11 +26,14 @@ class RegisterActivity : AppCompatActivity() {
         // Обработка клика по кнопке регистрации
         binding.registerBtn.setOnClickListener {
 
+
+            // БДБДБДБДБДББДББДБДБДБДБДБДБДДБДБДБДБДБДБД
             val database =
                 FirebaseDatabase.getInstance("https://mental-health-72105-default-rtdb.europe-west1.firebasedatabase.app")
+            // БДБДБДБДБДБДБДБДБДБДБДБДБДБДБДБДБДБДБДБДБ
+
 
             val usersRef = database.getReference("Users")
-
             val email = binding.emailEditText.text.toString()
             val password = binding.passwordEditText.text.toString()
             val username = binding.usernameEditText.text.toString()
@@ -53,13 +56,6 @@ class RegisterActivity : AppCompatActivity() {
                     }
             }
             startActivity(Intent(this@RegisterActivity, LoginActivity::class.java))
-        }
-
-        // Настройка edge-to-edge экрана и отступов
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
         }
     }
 }
