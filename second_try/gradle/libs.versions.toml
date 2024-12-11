@@ -1,5 +1,5 @@
 [versions]
-agp = "8.7.2"
+agp = "8.6.1"
 firebaseAnalytics = "22.1.2"
 firebaseBom = "33.5.1"
 firebaseDatabaseVersion = "20.0.9'"
