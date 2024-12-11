@@ -15,25 +15,22 @@ import com.github.mikephil.charting.components.XAxis
 import com.github.mikephil.charting.data.Entry
 import com.github.mikephil.charting.data.LineData
 import com.github.mikephil.charting.data.LineDataSet
-import com.google.firebase.database.DataSnapshot
-import com.google.firebase.database.DatabaseError
-import com.google.firebase.database.FirebaseDatabase
-import com.google.firebase.database.ValueEventListener
+import com.google.firebase.firestore.FirebaseFirestore
+import com.google.firebase.firestore.Query
 
-class GraphicActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity() {
 
     private lateinit var lineChart: LineChart
-    private val database = FirebaseDatabase.getInstance("https://mental-health-72105-default-rtdb.europe-west1.firebasedatabase.app")
-
+    private val firestore: FirebaseFirestore by lazy { FirebaseFirestore.getInstance() }
 
     private lateinit var popupContainer: FrameLayout // Контейнер для всплывающего окна
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_graphic)
+        setContentView(R.layout.activity_main)
 
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.graph)) { v, insets ->
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
@@ -65,15 +62,15 @@ class GraphicActivity : AppCompatActivity() {
     }
 
     private fun loadChartData() {
-        val chartDataRef = database.getReference("chartData")
-
-        chartDataRef.addValueEventListener(object : ValueEventListener {
-            override fun onDataChange(snapshot: DataSnapshot) {
+        firestore.collection("chartData")
+            .orderBy("year", Query.Direction.ASCENDING)
+            .get()
+            .addOnSuccessListener { documents ->
                 val entries = mutableListOf<Entry>()
 
-                for (dataSnapshot in snapshot.children) {
-                    val year = dataSnapshot.child("year").getValue(Float::class.java)
-                    val value = dataSnapshot.child("value").getValue(Float::class.java)
+                for (document in documents) {
+                    val year = document.getLong("year")?.toFloat()
+                    val value = document.getDouble("value")?.toFloat()
 
                     if (year != null && value != null) {
                         entries.add(Entry(year, value))
@@ -81,7 +78,7 @@ class GraphicActivity : AppCompatActivity() {
                 }
 
                 if (entries.isNotEmpty()) {
-                    val dataSet = LineDataSet(entries, "Данные из Realtime Database").apply {
+                    val dataSet = LineDataSet(entries, "Данные из Firestore").apply {
                         lineWidth = 2f
                         color = Color.BLUE
                         setDrawCircles(false)
@@ -103,10 +100,8 @@ class GraphicActivity : AppCompatActivity() {
                     lineChart.invalidate() // Перерисовываем график
                 }
             }
-
-            override fun onCancelled(error: DatabaseError) {
-                error.toException().printStackTrace()
+            .addOnFailureListener { exception ->
+                exception.printStackTrace()
             }
-        })
     }
 }

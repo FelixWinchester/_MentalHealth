@@ -3,10 +3,10 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/graph"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GraphicActivity">
+    tools:context=".MainActivity">
 
     <!-- TextView перед графиком -->
     <TextView
@@ -68,7 +68,7 @@
     <FrameLayout
         android:id="@+id/popupContainer"
         android:layout_width="match_parent"
-        android:layout_height=  "match_parent"
+        android:layout_height="match_parent"
         android:background="#80000000"
         android:visibility="gone"> <!-- Скрыто по умолчанию -->
 
