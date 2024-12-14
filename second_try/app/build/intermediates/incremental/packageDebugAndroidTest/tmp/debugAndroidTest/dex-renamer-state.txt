@@ -1,0 +1,10 @@
+#Thu Nov 14 00:13:15 GMT+04:00 2024
+base.0=E\:\\_MentalHealth\\second_try\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeExtDexDebugAndroidTest\\classes.dex
+base.1=E\:\\_MentalHealth\\second_try\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeProjectDexDebugAndroidTest\\0\\classes.dex
+base.2=E\:\\_MentalHealth\\second_try\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeProjectDexDebugAndroidTest\\7\\classes.dex
+path.0=classes.dex
+path.1=0/classes.dex
+path.2=7/classes.dex
+renamed.0=classes.dex
+renamed.1=classes2.dex
+renamed.2=classes3.dex

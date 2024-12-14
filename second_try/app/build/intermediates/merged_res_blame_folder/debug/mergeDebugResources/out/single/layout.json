@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-mergeDebugResources-70:\\layout\\activity_login.xml",
+        "source": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-main-73:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-mergeDebugResources-70:\\layout\\activity_mood.xml",
+        "source": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-main-73:\\layout\\activity_mood.xml"
+    },
+    {
+        "merged": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-mergeDebugResources-70:\\layout\\activity_achievements.xml",
+        "source": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-main-73:\\layout\\activity_achievements.xml"
+    },
+    {
+        "merged": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-mergeDebugResources-70:\\layout\\activity_register.xml",
+        "source": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-main-73:\\layout\\activity_register.xml"
+    },
+    {
+        "merged": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-mergeDebugResources-70:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-main-73:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "com.example.second_try.app-mergeDebugResources-70:/layout/activity_mood.xml",
+        "source": "com.example.second_try.app-main-73:/layout/activity_mood.xml"
+    }
+]

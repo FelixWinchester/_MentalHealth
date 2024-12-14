@@ -1,0 +1,47 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+
+  <!-- Лицо -->
+  <path
+      android:pathData="M50,50m-48,0a48,48 0,1 1,96 0a48,48 0,1 1,-96 0"
+      android:strokeWidth="4"
+      android:fillColor="#FFEB3B"
+      android:strokeColor="#FBC02D"/>
+
+  <!-- Левый глаз -->
+  <path
+      android:pathData="M35,40m-6,0a6,6 0,1 1,12 0a6,6 0,1 1,-12 0"
+      android:fillColor="#000000"/>
+  <path
+      android:pathData="M33,38m-2,0a2,2 0,1 1,4 0a2,2 0,1 1,-4 0"
+      android:fillColor="#FFFFFF"/>
+
+  <!-- Правый глаз -->
+  <path
+      android:pathData="M65,40m-6,0a6,6 0,1 1,12 0a6,6 0,1 1,-12 0"
+      android:fillColor="#000000"/>
+  <path
+      android:pathData="M63,38m-2,0a2,2 0,1 1,4 0a2,2 0,1 1,-4 0"
+      android:fillColor="#FFFFFF"/>
+
+  <!-- Злые брови -->
+  <path
+      android:pathData="M28,30L42,35"
+      android:strokeWidth="4"
+      android:strokeColor="#000000"/>
+  <path
+      android:pathData="M72,30L58,35"
+      android:strokeWidth="4"
+      android:strokeColor="#000000"/>
+
+  <!-- Злой рот -->
+  <path
+      android:pathData="M30,70Q50,55 70,70"
+      android:strokeWidth="4"
+      android:fillColor="#00000000"
+      android:strokeColor="#000000"
+      android:strokeLineCap="round"/>
+</vector>

@@ -1,0 +1,33 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+
+  <!-- Лицо -->
+  <path
+      android:pathData="M50,50m-48,0a48,48 0,1 1,96 0a48,48 0,1 1,-96 0"
+      android:strokeWidth="4"
+      android:fillColor="#FFEB3B"
+      android:strokeColor="#FBC02D"/>
+
+  <!-- Глаза -->
+  <path
+      android:pathData="M28,40Q35,35 42,40"
+      android:strokeWidth="4"
+      android:strokeColor="#000000"
+      android:strokeLineCap="round"/>
+  <path
+      android:pathData="M58,40Q65,35 72,40"
+      android:strokeWidth="4"
+      android:strokeColor="#000000"
+      android:strokeLineCap="round"/>
+
+  <!-- Расслабленный рот -->
+  <path
+      android:pathData="M35,65Q50,75 65,65"
+      android:strokeWidth="4"
+      android:fillColor="#00000000"
+      android:strokeColor="#000000"
+      android:strokeLineCap="round"/>
+</vector>

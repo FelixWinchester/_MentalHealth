@@ -1,0 +1,299 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Заголовок -->
+    <TextView
+        android:id="@+id/moodTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Как вы себя чувствуете?"
+        android:textSize="24sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Сетка плиток -->
+    <GridLayout
+        android:id="@+id/moodGrid"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:columnCount="2"
+        android:rowCount="3"
+        android:useDefaultMargins="true"
+        app:layout_constraintTop_toBottomOf="@id/moodTitle"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <!-- Плитка 1 -->
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:padding="8dp"
+            android:background="@drawable/background_happy">
+
+            <!-- Содержимое плитки -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <!-- Картинка -->
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:contentDescription="Счастливый"
+                    android:src="@drawable/ic_happy"
+                    android:layout_gravity="center" />
+
+                <!-- Текст -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Счастливый"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <!-- Прозрачная кнопка поверх -->
+            <Button
+                android:id="@+id/btnHappy"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:focusable="true"
+                android:clickable="true" />
+        </FrameLayout>
+
+        <!-- Плитка 2 -->
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:padding="8dp"
+            android:background="@drawable/background_sad">
+
+            <!-- Содержимое плитки -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <!-- Картинка -->
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:contentDescription="Грустный"
+                    android:src="@drawable/ic_sad"
+                    android:layout_gravity="center" />
+
+                <!-- Текст -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Грустный"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <!-- Прозрачная кнопка поверх -->
+            <Button
+                android:id="@+id/btnSad"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:focusable="true"
+                android:clickable="true" />
+        </FrameLayout>
+
+        <!-- Плитка 3 -->
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:padding="8dp"
+            android:background="@drawable/background_angry">
+
+            <!-- Содержимое плитки -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <!-- Картинка -->
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:contentDescription="Злой"
+                    android:src="@drawable/ic_angry"
+                    android:layout_gravity="center" />
+
+                <!-- Текст -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Злой"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <!-- Прозрачная кнопка поверх -->
+            <Button
+                android:id="@+id/btnAngry"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:focusable="true"
+                android:clickable="true" />
+        </FrameLayout>
+
+        <!-- Плитка 4 -->
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:padding="8dp"
+            android:background="@drawable/background_relaxed">
+
+            <!-- Содержимое плитки -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <!-- Картинка -->
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:contentDescription="Расслабленный"
+                    android:src="@drawable/ic_relaxed"
+                    android:layout_gravity="center" />
+
+                <!-- Текст -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Расслабленный"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <!-- Прозрачная кнопка поверх -->
+            <Button
+                android:id="@+id/btnRelaxed"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:focusable="true"
+                android:clickable="true" />
+        </FrameLayout>
+
+        <!-- Плитка 5 -->
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:padding="8dp"
+            android:background="@drawable/background_tired">
+
+            <!-- Содержимое плитки -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <!-- Картинка -->
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:contentDescription="Уставший"
+                    android:src="@drawable/ic_tired"
+                    android:layout_gravity="center" />
+
+                <!-- Текст -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Уставший"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <!-- Прозрачная кнопка поверх -->
+            <Button
+                android:id="@+id/btnTired"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:focusable="true"
+                android:clickable="true" />
+        </FrameLayout>
+
+        <!-- Плитка 6 -->
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:padding="8dp"
+            android:background="@drawable/background_excited">
+
+            <!-- Содержимое плитки -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <!-- Картинка -->
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:contentDescription="Взволнованный"
+                    android:src="@drawable/ic_excited"
+                    android:layout_gravity="center" />
+
+                <!-- Текст -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Взволнованный"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <!-- Прозрачная кнопка поверх -->
+            <Button
+                android:id="@+id/btnExcited"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:focusable="true"
+                android:clickable="true" />
+        </FrameLayout>
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

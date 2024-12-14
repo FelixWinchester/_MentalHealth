@@ -1,0 +1,178 @@
+[
+    {
+        "merged": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-debug-71:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-main-73:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-debug-71:\\drawable_background_tired.xml.flat",
+        "source": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-main-73:\\drawable\\background_tired.xml"
+    },
+    {
+        "merged": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-debug-71:\\drawable_day_background.xml.flat",
+        "source": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-main-73:\\drawable\\day_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-debug-71:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-main-73:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-debug-71:\\drawable_ic_sad.xml.flat",
+        "source": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-main-73:\\drawable\\ic_sad.xml"
+    },
+    {
+        "merged": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-debug-71:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-main-73:\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-debug-71:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-main-73:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-debug-71:\\drawable_transparent_button.xml.flat",
+        "source": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-main-73:\\drawable\\transparent_button.xml"
+    },
+    {
+        "merged": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-debug-71:\\drawable_article_background.xml.flat",
+        "source": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-main-73:\\drawable\\article_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-debug-71:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-main-73:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-debug-71:\\drawable_ic_happy.xml.flat",
+        "source": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-main-73:\\drawable\\ic_happy.xml"
+    },
+    {
+        "merged": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-debug-71:\\drawable_background_happy.xml.flat",
+        "source": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-main-73:\\drawable\\background_happy.xml"
+    },
+    {
+        "merged": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-debug-71:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-main-73:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-debug-71:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-main-73:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-debug-71:\\drawable_button_background.xml.flat",
+        "source": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-main-73:\\drawable\\button_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-debug-71:\\mipmap-anydpi_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-main-73:\\mipmap-anydpi\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-debug-71:\\layout_activity_register.xml.flat",
+        "source": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-main-73:\\layout\\activity_register.xml"
+    },
+    {
+        "merged": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-debug-71:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-main-73:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-debug-71:\\layout_activity_achievements.xml.flat",
+        "source": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-main-73:\\layout\\activity_achievements.xml"
+    },
+    {
+        "merged": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-debug-71:\\anim_tile_pop.xml.flat",
+        "source": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-main-73:\\anim\\tile_pop.xml"
+    },
+    {
+        "merged": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-debug-71:\\drawable_ic_angry.xml.flat",
+        "source": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-main-73:\\drawable\\ic_angry.xml"
+    },
+    {
+        "merged": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-debug-71:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-main-73:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-debug-71:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-main-73:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-debug-71:\\drawable_background_popup.xml.flat",
+        "source": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-main-73:\\drawable\\background_popup.xml"
+    },
+    {
+        "merged": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-debug-71:\\drawable_background_sad.xml.flat",
+        "source": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-main-73:\\drawable\\background_sad.xml"
+    },
+    {
+        "merged": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-debug-71:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-main-73:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-debug-71:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-main-73:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-debug-71:\\drawable_border.xml.flat",
+        "source": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-main-73:\\drawable\\border.xml"
+    },
+    {
+        "merged": "com.example.second_try.app-debug-71:/layout_activity_mood.xml.flat",
+        "source": "com.example.second_try.app-main-73:/layout/activity_mood.xml"
+    },
+    {
+        "merged": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-debug-71:\\mipmap-anydpi_ic_launcher.xml.flat",
+        "source": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-main-73:\\mipmap-anydpi\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-debug-71:\\layout_activity_mood.xml.flat",
+        "source": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-main-73:\\layout\\activity_mood.xml"
+    },
+    {
+        "merged": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-debug-71:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-main-73:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-debug-71:\\drawable_background_excited.xml.flat",
+        "source": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-main-73:\\drawable\\background_excited.xml"
+    },
+    {
+        "merged": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-debug-71:\\drawable_circle_shape.xml.flat",
+        "source": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-main-73:\\drawable\\circle_shape.xml"
+    },
+    {
+        "merged": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-debug-71:\\drawable_inset_background.xml.flat",
+        "source": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-main-73:\\drawable\\inset_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-debug-71:\\drawable_ic_excited.xml.flat",
+        "source": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-main-73:\\drawable\\ic_excited.xml"
+    },
+    {
+        "merged": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-debug-71:\\drawable_ic_profile.jpg.flat",
+        "source": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-main-73:\\drawable\\ic_profile.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-debug-71:\\drawable_background_angry.xml.flat",
+        "source": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-main-73:\\drawable\\background_angry.xml"
+    },
+    {
+        "merged": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-debug-71:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-main-73:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-debug-71:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-main-73:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-debug-71:\\drawable_ic_tired.xml.flat",
+        "source": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-main-73:\\drawable\\ic_tired.xml"
+    },
+    {
+        "merged": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-debug-71:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-main-73:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-debug-71:\\drawable_background_relaxed.xml.flat",
+        "source": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-main-73:\\drawable\\background_relaxed.xml"
+    },
+    {
+        "merged": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-debug-71:\\drawable_ic_relaxed.xml.flat",
+        "source": "C:\\Users\\Professional\\.gradle\\daemon\\8.7\\com.example.second_try.app-main-73:\\drawable\\ic_relaxed.xml"
+    }
+]

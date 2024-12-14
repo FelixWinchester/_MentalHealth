@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gcm_defaultSenderId" translatable="false">945155949990</string>
+    <string name="google_api_key" translatable="false">AIzaSyD9P-UPaLTGonqjjI_PF0F_wpw2UbiaNyI</string>
+    <string name="google_app_id" translatable="false">1:945155949990:android:7f06cac7f95d9d68b6fb67</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyD9P-UPaLTGonqjjI_PF0F_wpw2UbiaNyI</string>
+    <string name="google_storage_bucket" translatable="false">mental-health-72105.firebasestorage.app</string>
+    <string name="project_id" translatable="false">mental-health-72105</string>
+</resources>
