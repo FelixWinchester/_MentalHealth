@@ -1,7 +1,7 @@
 <div align = "center">
   
 # $${\color{lightgreen}Проект \space по \space Т.Р.П.О.} $$ 
-## $${\color{lightblue}Тема \space проекта: \space "Дневник \space эмоций" \space или \space "Дневник \space ментального \space здоровья"} $$  
+## $${\color{lightblue}Тема \space проекта \space "Дневник \space ментального \space здоровья"} $$  
 ## $${\color{pink}Название \space команды: \space "Watermelon \space inc."} $$
 
 <img src = "https://www.pngmart.com/files/3/Watermelon-PNG-File.png" width = "300">
